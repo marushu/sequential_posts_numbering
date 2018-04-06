@@ -41,7 +41,7 @@ function sequential_posts_numbering( $post_type = 'post', $posts_per_page = -1, 
 		}
 	}
 	$post_id       = get_the_ID();
-	$post_position = array_search( $post_id, array_reverse( $posts_keys ), true );
+	$post_position = array_search( $post_id, array_reverse( $posts_keys ) );
 	$post_position++;
 
 	return intval( $post_position );

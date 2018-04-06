@@ -34,7 +34,7 @@ class Numbering extends WP_UnitTestCase {
 			}
 		}
 		$post_id       = $last_post_id;
-		$post_position = array_search( $post_id, array_reverse( $posts_keys ), true );
+		$post_position = array_search( $post_id, array_reverse( $posts_keys ) );
 		$post_position++;
 
 		$this->assertEquals( intval( $post_position ), 5 );
