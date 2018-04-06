@@ -23,7 +23,6 @@ class Numbering extends WP_UnitTestCase {
 			'post_status'      => 'publish',
 			'order'            => 'DESC',
 			'orderby'          => 'post_date',
-			'suppress_filters' => false,
 		);
 		$sequential_posts = get_posts( $args );
 		if ( ! empty( $sequential_posts ) ) {

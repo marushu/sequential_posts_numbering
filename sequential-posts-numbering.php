@@ -15,35 +15,34 @@
  */
 
 /**
- * Sequential posts numbering
+ * Sequential posts numbering.
  *
- * @param string $post_type
- * @param int $posts_per_page
- * @param string $post_status
+ * @param string $post_type      post type.
+ * @param int    $posts_per_page posts per page.
+ * @param string $post_status    post status.
  *
  * @return int
  */
-function sequential_posts_numbering( $post_type  = 'post', $posts_per_page = -1, $post_status = 'publish' ) {
+function sequential_posts_numbering( $post_type = 'post', $posts_per_page = -1, $post_status = 'publish' ) {
 
-	$posts_keys = array();
-	$args       = array(
+	$posts_keys       = array();
+	$args             = array(
 		'post_type'      => $post_type,
 		'posts_per_page' => $posts_per_page,
 		'post_status'    => $post_status,
 	);
-	$sequential_posts  = get_posts( $args );
-	if( ! empty( $sequential_posts ) ) {
+	$sequential_posts = get_posts( $args );
+	if ( ! empty( $sequential_posts ) ) {
 
-		foreach( $sequential_posts as $key => $sequential_post ) {
+		foreach ( $sequential_posts as $key => $sequential_post ) {
 
-			$posts_keys[$key] = $sequential_post->ID;
+			$posts_keys[ $key ] = $sequential_post->ID;
 
 		}
-
 	}
-	$post_id        = get_the_ID();
-	$post_position  = array_search( $post_id, array_reverse( $posts_keys ) );
-	$post_position += 1;
+	$post_id       = get_the_ID();
+	$post_position = array_search( $post_id, array_reverse( $posts_keys ), true );
+	$post_position++;
 
 	return intval( $post_position );
 
