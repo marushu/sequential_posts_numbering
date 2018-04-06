@@ -2,6 +2,7 @@
 
 
 === Sequential posts numbering ===
+
 Tags: posts, lists
 Requires at least: 4.4
 Tested up to: 4.9.5
