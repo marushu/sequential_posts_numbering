@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/marushu/sequential_posts_numbering.svg?branch=master)](https://travis-ci.org/marushu/sequential_posts_numbering)
+
+
 === Sequential posts numbering ===
 Tags: posts, lists
 Requires at least: 4.4
