@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/marushu/sequential_posts_numbering.svg?branch=master)](https://travis-ci.org/marushu/sequential_posts_numbering)
+https://travis-ci.org/marushu/sequential_posts_numbering.svg?branch=master
 
 
 === Sequential posts numbering ===
