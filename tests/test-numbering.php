@@ -18,11 +18,11 @@ class Numbering extends WP_UnitTestCase {
 		$last_post_id     = $some_posts[0];
 		$posts_keys       = array();
 		$args             = array(
-			'post_type'        => 'post',
-			'posts_per_page'   => -1,
-			'post_status'      => 'publish',
-			'order'            => 'DESC',
-			'orderby'          => 'post_date',
+			'post_type'      => 'post',
+			'posts_per_page' => -1,
+			'post_status'    => 'publish',
+			'order'          => 'DESC',
+			'orderby'        => 'post_date',
 		);
 		$sequential_posts = get_posts( $args );
 		if ( ! empty( $sequential_posts ) ) {
