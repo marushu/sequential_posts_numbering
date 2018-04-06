@@ -32,8 +32,8 @@ module.exports = function( grunt ) {
 				options: {
 					domainPath: '/languages',
 					exclude: [ '\.git/*', 'bin/*', 'node_modules/*', 'tests/*' ],
-					mainFile: 'sequential_posts_numbering.php',
-					potFilename: 'sequential_posts_numbering.pot',
+					mainFile: 'sequential-posts-numbering.php',
+					potFilename: 'sequential-posts-numbering.pot',
 					potHeaders: {
 						poedit: true,
 						'x-poedit-keywordslist': true
