@@ -1,0 +1,11 @@
+package.json
+Gruntfile.js
+bin/*
+phpcs.xml.dist
+phpunit.xml.dist
+tests/*
+.distignore
+.editorconfig
+.git/*
+.gitignore
+.travis.yml
