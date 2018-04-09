@@ -30,6 +30,7 @@ class Numbering extends WP_UnitTestCase {
 			foreach ( $sequential_posts as $key => $sequential_post ) {
 
 				$posts_keys[ $key ] = $sequential_post->ID;
+				
 
 			}
 		}
