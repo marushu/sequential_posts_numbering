@@ -29,7 +29,7 @@ It demonstrates its power with archives and single pages in the loop. :P
 
 == Changelog ==
 
-= 0.1 =
+= 0.1.0 =
 - First release :)
 
 == Contact ==
