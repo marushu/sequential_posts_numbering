@@ -27,9 +27,11 @@ function sequential_posts_numbering( $post_type = 'post', $posts_per_page = -1, 
 
 	$posts_keys       = array();
 	$args             = array(
-		'post_type'      => $post_type,
-		'posts_per_page' => $posts_per_page,
-		'post_status'    => $post_status,
+		'post_type'      => 'post',
+		'posts_per_page' => -1,
+		'post_status'    => 'publish',
+		'order'          => 'DESC',
+		'orderby'        => 'post_date',
 	);
 	$sequential_posts = get_posts( $args );
 	if ( ! empty( $sequential_posts ) ) {
