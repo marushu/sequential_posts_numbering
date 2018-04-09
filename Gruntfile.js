@@ -9,7 +9,7 @@ module.exports = function( grunt ) {
 
 		addtextdomain: {
 			options: {
-				textdomain: 'sequential_posts_numbering',
+				textdomain: 'sequential-posts-numbering',
 			},
 			update_all_domains: {
 				options: {

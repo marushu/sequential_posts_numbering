@@ -22,7 +22,7 @@ class Numbering extends WP_UnitTestCase {
 			'posts_per_page' => -1,
 			'post_status'    => 'publish',
 			'order'          => 'DESC',
-			'orderby'        => 'post_date',
+			//'orderby'        => 'post_date',
 		);
 		$sequential_posts = get_posts( $args );
 		if ( ! empty( $sequential_posts ) ) {
@@ -36,7 +36,6 @@ class Numbering extends WP_UnitTestCase {
 		$post_id       = $last_post_id;
 		$post_position = array_search( $post_id, array_reverse( $posts_keys ), true );
 		$post_position++;
-
 		$this->assertEquals( intval( $post_position ), 5 );
 
 	}
